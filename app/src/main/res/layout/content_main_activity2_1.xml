@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main_activity2_1"
+    tools:context="com.example.help.MainActivity2_1"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="반복 횟수"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:layout_marginTop="100dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/count"
+            android:layout_marginTop="15dp"
+            android:textSize="50dp"
+            android:text="00" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            android:id="@+id/button"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/button1"
+            android:src="@drawable/start"
+            android:scaleType="centerInside"
+            android:background="#ffffff"
+            android:onClick="start" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/button2"
+            android:src="@drawable/pause"
+            android:scaleType="centerInside"
+            android:background="#ffffff"
+            android:onClick="pause" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/button3"
+            android:src="@drawable/reset"
+            android:scaleType="centerInside"
+            android:background="#ffffff"
+            android:onClick="reset" />
+    </LinearLayout>
+
+</LinearLayout>

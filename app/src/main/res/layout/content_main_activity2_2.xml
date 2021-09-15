@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main_activity2_2"
+    tools:context="com.example.help.MainActivity2_2">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:longClickable="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:text="Squat"
+                android:id="@+id/button4"
+                android:textSize="25dp"
+                android:textAllCaps="false">
+            </Button>
+
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:text="Lunge"
+                android:id="@+id/button5"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Plank"
+                android:id="@+id/button6"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Dead"
+                android:id="@+id/button7"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Side"
+                android:id="@+id/button8"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:text="Crunch"
+                android:id="@+id/button9"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:text="Burpee"
+                android:id="@+id/button10"
+                android:textSize="25dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/squat"
+            android:src="@drawable/sq"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lunge"
+            android:src="@drawable/lunge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Plank"
+            android:src="@drawable/fla"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dead"
+            android:src="@drawable/dead"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/side"
+            android:src="@drawable/ide"
+            android:visibility="invisible"
+            android:scaleType="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/crunch"
+            android:src="@drawable/cr"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/burpee"
+            android:src="@drawable/bu"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer2"
+        android:textSize="30dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:id="@+id/imageButton2"
+            android:scaleType="centerInside"
+            android:src="@drawable/start" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:id="@+id/imageButton3"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pause"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:id="@+id/imageButton4"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/reset"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="스쿼트 자세"
+        android:id="@+id/textView4"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
